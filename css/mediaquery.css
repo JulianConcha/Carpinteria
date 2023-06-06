@@ -1,0 +1,180 @@
+@media screen and (max-width: 390px) {
+  .barra_principal {
+    display: none;
+  }
+  .informacion_header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .informacion_header .menu_mq {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    height: auto;
+  }
+
+  .informacion_header .menu_mq i {
+    display: block;
+    background-color: var(--cafeprincipal);
+    padding: 12px;
+    border-radius: 5px;
+    color: var(--blanco);
+    margin-right: 10px;
+    font-size: 20px;
+  }
+
+  .informacion_header nav {
+    
+   display: grid;
+   grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    text-align: center;
+    background-color: var(--cafeprincipal);
+  }
+
+  .informacion_header nav a {
+    color: var(--blanco);
+    padding: 12px 0px;
+    margin: 0;
+  }
+
+  /* informacion ayuda */
+  .informacion_ayuda article {
+    border-radius: 34px;
+    background: linear-gradient(145deg, #b2854b, #d49e59);
+    box-shadow: 5px 5px 21px #4f3b21, -5px -5px 21px #ffed85;
+    margin: 15px 10px;
+  }
+
+  .informacion_ayuda article i {
+    background-color: var(--blanco);
+    color: var(--cafeprincipal);
+  }
+
+  .informacion_ayuda article:hover {
+    margin-top: 0px;
+  }
+  /* article */
+  .informacion_ayuda {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* planes informacion */
+  .your_plans-informacion {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .your_plans-informacion article {
+    transform: rotate(0deg);
+  }
+
+  .your_plans-informacion figure {
+    filter: blur(0px);
+    margin-top: 20px;
+  }
+
+  .trabajos_article {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .trabajos_article article {
+    margin: 15px 10px;
+    filter: sepia(0);
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px 10px;
+  }
+
+  .section1,
+  .section2,
+  .seciont3 {
+    margin-top: 20px;
+  }
+  /* SECCION DE QUIENES SOMOS DE INDEX */
+  #galeria {
+    display: inline-block;
+  }
+
+  #galeria img {
+    clip-path: circle(50% at 50% 50%);
+    margin-top: 20px;
+  }
+
+  #galeria a {
+    filter: brightness(100%);
+  }
+
+  .choose_informaciones {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .choose_article aside {
+    margin-left: 0px;
+    margin: 20px auto;
+    transition: all 0.5s;
+    background-color: var(--cafeprincipal);
+    color: var(--blanco);
+    background: linear-gradient(145deg, #b2854b, #d49e59);
+    box-shadow: 5px 5px 21px #4f3b21, -5px -5px 21px #ffed85;
+  }
+  .choose_informaciones .imagenes_grid {
+    display: non;
+  }
+  .imagenes_grid img {
+    filter: blur(0);
+  }
+
+  .sucursales_generales {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
+
+  .sucursales_generales article {
+    margin-top: 15px;
+  }
+
+  /* SECCION DE CONTACTO html  */
+
+  .rslide img {
+    width: 100%;
+  }
+  h1 {
+    line-height: 30px;
+    padding: 0px 20px;
+  }
+  .infoslide p {
+    font-size: 18px;
+    text-align: center;
+    line-height: 20px;
+  }
+  .btn_rosado {
+    padding: 10px 20px;
+  }
+  .btn_borde {
+    padding: 10px 20px;
+  }
+
+  .preguntas_informacion figure {
+    filter: sepia(0);
+  }
+
+  .btn_cafe {
+    background-color: var(--oscuro);
+    color: var(--cafeprincipal);
+    border-radius: 30px;
+  }
+}

@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carpinteria</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mediaquery.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/responsiveslides.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="tinycarousel.css"
+      type="text/css"
+      media="screen"
+    />
+
+    <script type="text/javascript" src="jquery.tinycarousel.js"></script>
+    <script
+      src="https://kit.fontawesome.com/2ee0245f3d.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="fancybox/jquery.fancybox.js"></script>
+    <link rel="stylesheet" href="fancybox/jquery.fancybox.css" />
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#slider1").tinycarousel();
+      });
+    </script>
+
+    <script>
+      $(function () {
+        $(".rslides").responsiveSlides();
+      });
+    </script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#slider1").tinycarousel();
+      });
+    </script>
+
+    <script>
+      $(function () {
+        $("#slider4").responsiveSlides({
+          auto: false,
+          pager: false,
+          nav: true,
+          speed: 500,
+          namespace: "callbacks",
+          before: function () {
+            $(".events").append("<li>before event fired.</li>");
+          },
+          after: function () {
+            $(".events").append("<li>after event fired.</li>");
+          },
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <i
+      class="wow animate__animated animate__flash ir_arriba fa-solid fa-circle-up"
+    ></i>
+    <section class="barra_principal">
+      <div class="ancho barra">
+        <div class="informacion">
+          <i class="fa-solid fa-phone-volume"></i>
+          <p>+ 52 1234567890</p>
+        </div>
+        <div class="informacion">
+          <i class="fa-regular fa-clock"></i>
+          <p>Mon - Sat : 9:00 - 18:00</p>
+        </div>
+        <div class="informacion">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-whatsapp"></i>
+          <i class="fa-brands fa-google-plus-g"></i>
+        </div>
+      </div>
+    </section>
+
+    <header>
+      <section class="ancho informacion_header">
+        <div class="menu_mq">
+          <img src="img/logo.png" alt="logo" />
+          <i id="icono" class="fa-solid fa-bars"></i>
+        </div>
+        <nav id="caja">
+          <a href="index.html">Home</a>
+          <a href="nosotros.html">About Us</a>
+          <a href="contacto.html">Contact</a>
+          <a href="#">Services</a>
+          <a href="#">Blog</a>
+        </nav>
+      </section>
+    </header>
+
+    <!-- SECCION DE SLIDE SOLO -->
+    <section class="slidefotos">
+      <div class="infoslide">
+        <h1 class="animate__animated animate__bounceInLeft">
+          PROMOCIONES DE JUNIO
+        </h1>
+        <p class="animate__animated animate__bounceInRight">
+          Se acerca la epoca de promociones y por eso preparamos estas
+          promociones para ti.
+        </p>
+        <div class="contenedorbotones animate__animated animate__zoomInRight">
+          <a href="#" class="btn_cafe">Promoción</a>
+          <a href="#" class="btn_cafe">Ver video</a>
+        </div>
+      </div>
+    </section>
+    <!-- SECCION DE NUESTRA UBICACION -->
+
+    <section class="wow animate__animated animate__swing ubicacion">
+      <h2>Nuestra Ubicación</h2>
+      <section class="ancho ubicacion_fondo">
+        <figure>
+          <img src="img/ubicacion.jpg" alt="" />
+        </figure>
+      </section>
+    </section>
+
+    <!-- SECCION DE UBICACION -->
+    <!-- <section>
+        <section class="ancho">
+
+        </section>
+      </section> -->
+    <section class="sucursales_contact">
+      <h2 class="h2">CONTACTO DE NUESTRAS SUCURSALES</h2>
+
+      <div class="wow animate__animated animate__backInRight" id="slider1">
+        <div class="contenedor_flechas">
+          <a class="buttons prev" href="#"
+            ><i class="fa-solid fa-angle-left"></i
+          ></a>
+          <a class="buttons next" href="#"
+            ><i class="fa-solid fa-angle-right"></i
+          ></a>
+        </div>
+        <div class="viewport">
+          <ul class="overview">
+            <li>
+              <img src="img/sucursal1.jpg" />
+              <h2>Yucatán</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                adipisci quaerat veniam! Velit non sit eos. Expedita harum amet
+              </p>
+              <br />
+              <a href="#" class="btn_vermas">ver mas</a>
+              <br />
+            </li>
+            <li>
+              <img src="img/sucursal2.jpg" />
+              <h2>Cancún</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                adipisci quaerat veniam! Velit non sit eos. Expedita harum amet
+              </p>
+              <br />
+              <a href="#" class="btn_vermas">ver mas</a>
+              <br />
+            </li>
+            <li>
+              <img src="img/sucursal3.jpg" />
+              <h2>México</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                adipisci quaerat veniam! Velit non sit eos. Expedita harum amet
+              </p>
+              <br />
+              <a href="#" class="btn_vermas">ver mas</a>
+              <br />
+            </li>
+            <li>
+              <img src="img/sucursal1.jpg" />
+              <h2>Monterrey</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                adipisci quaerat veniam! Velit non sit eos. Expedita harum amet
+              </p>
+              <br />
+              <a href="#" class="btn_vermas">ver mas</a>
+              <br />
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- <a id="btn1" class="btn_modal" href="">Ver Video</a> -->
+    </section>
+
+    
+
+    <!-- SECCION DEL VIDEO -->
+
+    <section class=" wow animate__animated animate__lightSpeedInLeft video_responsive modal_informacion" id="modal">
+      <h1>NUESTROS PROCESOS</h1>
+      <article>
+        <div id="contenedoryoutube">
+          <iframe
+            src="https://www.youtube.com/embed/Fabnfk1iH8Y"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </article>
+    </section>
+
+    <!-- SECCION DEL FORMULARIO -->
+
+    <section class="llenado_contacto">
+      <h2>Contacto</h2>
+
+      <form class=" formulario wow animate__animated animate__flipInX">
+        <fieldset>
+          <legend>Contactanos antes de llenar el formulario</legend>
+
+          <div class="contenedor-campos">
+            <div class="campo">
+              <label>Nombre</label>
+              <input
+                class="input-text"
+                type="text"
+                placeholder="Ejemplo: Daniel Ek"
+              />
+            </div>
+
+            <div class="campo">
+              <label>Telefono</label>
+              <input class="input-text" type="tel" placeholder="1234567890" />
+            </div>
+
+            <div class="campo">
+              <label>Correo</label>
+              <input
+                class="input-text"
+                type="email"
+                placeholder="Ejemplo:Daniel@gmail.com"
+              />
+            </div>
+
+            <div class="campo">
+              <label>Mensaje</label>
+              <textarea class="input-text"></textarea>
+            </div>
+          </div>
+          <div class="enviar">
+            <input class="boton" type="submit" value="ENVIAR" />
+          </div>
+        </fieldset>
+      </form>
+
+      <section class="preguntas_informacion">
+        <aside class="wow animate__animated animate__jackInTheBox">
+        <article class="preguntas">
+          <div>
+            <h3>¿Qué tipo de madera usamos?</h3>
+            <i id="pregunta2" class="fa-solid fa-circle-chevron-down"></i>
+          </div>
+          <p id="respuesta2" > Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis exercitationem vel doloribus laudantium quis ipsam sint possimus ducimus voluptas, laboriosam facere cumque accusantium rem autem repellendus aspernatur perspiciatis, iusto odit.</p>
+        </article>
+
+        <article class="preguntas">
+          <div>
+            <h3>¿Qué tipo de madera usamos?</h3>
+            <i id="pregunta3" class="fa-solid fa-circle-chevron-down"></i>
+          </div>
+          <p id="respuesta3" > Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis exercitationem vel doloribus laudantium quis ipsam sint possimus ducimus voluptas, laboriosam facere cumque accusantium rem autem repellendus aspernatur perspiciatis, iusto odit.</p>
+        </article>
+        <article class="preguntas">
+          <div>
+            <h3>¿Qué tipo de madera usamos?</h3>
+            <i id="pregunta4" class="fa-solid fa-circle-chevron-down"></i>
+          </div>
+          <p id="respuesta4" > Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis exercitationem vel doloribus laudantium quis ipsam sint possimus ducimus voluptas, laboriosam facere cumque accusantium rem autem repellendus aspernatur perspiciatis, iusto odit.</p>
+        </article>
+        <article class="preguntas">
+          <div>
+            <h3>¿Qué tipo de madera usamos?</h3>
+            <i id="pregunta5" class="fa-solid fa-circle-chevron-down"></i>
+          </div>
+          <p id="respuesta5" > Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis exercitationem vel doloribus laudantium quis ipsam sint possimus ducimus voluptas, laboriosam facere cumque accusantium rem autem repellendus aspernatur perspiciatis, iusto odit.</p>
+        </article>
+      </aside>
+      <figure class="wow animate__animated animate__zoomIn">
+        <img src="img/pyr.png" alt="">
+      </figure>
+      </section>
+    </section>
+
+    <!-- SECCION DEL FOOTER -->
+    <footer>
+      <h2 class="ancho">Contactame Soy Daniel Ek</h2>
+      <section class="ancho footer">
+        <section class="section1">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate
+            reiciendis eveniet rem ratione quaerat recusandae
+          </p>
+        </section>
+        <section class="section2">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-whatsapp"></i>
+          <i class="fa-brands fa-google-plus-g"></i>
+        </section>
+        <section class="section1">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate
+            reiciendis eveniet rem ratione quaerat recusandae
+          </p>
+        </section>
+      </section>
+    </footer>
+    <!-- SECCION DE LOS SCRIPTS -->
+    <script>
+      new WOW().init();
+    </script>
+
+<script>
+   $("#pregunta2").click(function () {
+        $("#respuesta2").slideToggle();
+      });
+</script>
+
+<script>
+  $("#pregunta3").click(function () {
+       $("#respuesta3").slideToggle();
+     });
+</script>
+
+<script>
+  $("#pregunta4").click(function () {
+       $("#respuesta4").slideToggle();
+     });
+</script>
+
+<script>
+ $("#pregunta5").click(function () {
+      $("#respuesta5").slideToggle();
+    });
+</script>
+
+    
+    <!-- <script>
+      var mostrarmodal = document.getElementById("modal");
+      var cerrarmodal = document.getElementById("cerrarbtn");
+      var btnejecutar = document.getElementById("btn1");
+
+      //  function tiempo() {
+      //      mostrarmodal.style.display = "block";
+      //    }
+      //   setTimeout(tiempo, 3000);
+
+      btnejecutar.onclick = function () {
+        mostrarmodal.style.display = "block";
+      };
+
+      cerrarmodal.onclick = function () {
+        mostrarmodal.style.display = "none";
+      };
+
+      window.onclick = function (event) {
+        if (event.target == mostrarmodal) {
+          mostrarmodal.style.display = "none";
+        }
+      };
+    </script> -->
+    <script>
+      $("#icono").click(function () {
+        $("#caja").slideToggle();
+      });
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        $(".ir_arriba").click(function () {
+          $("body, html").animate(
+            {
+              scrollTop: "0px",
+            },
+            1000
+          );
+        });
+      });
+    </script>
+  </body>
+</html>

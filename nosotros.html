@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carpinteria</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mediaquery.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="tinycarousel.css"
+      type="text/css"
+      media="screen"
+    />
+
+    <script type="text/javascript" src="jquery.tinycarousel.js"></script>
+    <script
+      src="https://kit.fontawesome.com/2ee0245f3d.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script src="js/wow.min.js"></script>
+    <script src="js/responsiveslides.min.js"></script>
+
+    <script src="fancybox/jquery.fancybox.js"></script>
+    <link rel="stylesheet" href="fancybox/jquery.fancybox.css" />
+
+    <script type="text/javascript">
+      $(document).ready(function()
+      {
+        $('#slider1').tinycarousel();
+      });
+    </script>
+
+    <script>
+      $(function () {
+        $("#slider4").responsiveSlides({
+          auto: false,
+          pager: false,
+          nav: true,
+          speed: 500,
+          namespace: "callbacks",
+          before: function () {
+            $(".events").append("<li>before event fired.</li>");
+          },
+          after: function () {
+            $(".events").append("<li>after event fired.</li>");
+          },
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <i class="wow animate__animated animate__flash ir_arriba fa-solid fa-circle-up"></i>
+    <section class="barra_principal">
+      <div class="ancho barra">
+        <div class="informacion">
+          <i class="fa-solid fa-phone-volume"></i>
+          <p>+ 52 1234567890</p>
+        </div>
+        <div class="informacion">
+          <i class="fa-regular fa-clock"></i>
+          <p>Mon - Sat : 9:00 - 18:00</p>
+        </div>
+        <div class="informacion">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-whatsapp"></i>
+          <i class="fa-brands fa-google-plus-g"></i>
+        </div>
+      </div>
+    </section>
+
+    <header>
+      <section class="ancho informacion_header">
+        <div class="menu_mq">
+          <img src="img/logo.png" alt="logo" />
+          <i id="icono" class="fa-solid fa-bars"></i>
+        </div>
+        <nav id="caja">
+          <a href="index.html">Home</a>
+          <a href="nosotros.html">About Us</a>
+          <a href="contacto.html">Contact</a>
+          <a href="#">Services</a>
+          
+          <a href="#">Blog</a>
+          
+        </nav>
+      </section>
+    </header>
+
+<!-- SECCION DEL PARALLAX -->
+<section class="parrallas">
+    <div class="info2">
+      <h2>Sobre Nosotros</h2>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae facere
+        totam pariatur illo quae maiores repellat iusto molestias, voluptate
+        delectus aliquam
+      </p>
+    </div>
+  </section>
+
+  <!-- SECCION DE INFORMACION DE EMPLEADOS -->
+  <section class="fancy_fotos">
+    <h2 class="ancho">Team</h2>
+    <hr />
+    <div id="galeria" class="ancho contenedorfotos">
+      <a 
+        href="img/team1.jpg"
+        class="wow animate__animated animate__backInUp  fancybox"
+        title="Maya Poe"
+        rel="gallery1"
+      > 
+        <img src="img/team1.jpg" alt="" />
+      </a>
+
+      <a
+        href="img/team2.jpg"
+        class="wow animate__animated animate__backInUp  animate__delay-1s fancybox"
+        title="Anjelina M"
+        rel="gallery1"
+      >
+        <img src="img/team2.jpg" alt="" />
+      </a>
+
+      <a
+        href="img/team3.jpg"
+        class="wow animate__animated animate__backInUp  animate__delay-2s fancybox"
+        title="John Doe"
+        rel="gallery1"
+      >
+        <img src="img/team3.jpg" alt="" />
+      </a>
+
+      <a
+        href="img/team4.jpg"
+        class=" wow animate__animated animate__backInUp  animate__delay-3s fancybox"
+        title="D Marcos"
+        rel="gallery1"
+      >
+        <img src="img/team4.jpg" alt="" />
+      </a>
+    </div>
+  </section>
+
+
+<!-- SECCION DE CHOOSE -->
+
+  <section class="choose">  
+    <section class="ancho choose_informaciones">
+        <article class="choose_article">
+            <h1>Grow Your Business <br>
+                With Experience</h1>
+                
+                <aside class="wow animate__animated animate__flipInX animate__delay-0s">
+                    <i class="fa-solid fa-user-check"></i>
+                    <h2>Our Motive</h2>
+                </aside>
+                <aside class="wow animate__animated animate__flipInX animate__delay-1s">
+                    <i class="fa-solid fa-list-check"></i>
+                    <h2>Our Process</h2>
+                </aside>
+                <aside class="wow animate__animated animate__flipInX animate__delay-2s">
+                    <i class="fa-solid fa-shield-heart"></i>
+                    <h2>Our Security</h2>
+                </aside>
+        </article>
+       
+        <article class="imagenes_grid">
+          <img class="wow animate__animated animate__flipInX animate__delay-1s" src="img/nosotros1.png" alt="">
+          <img class="wow animate__animated animate__flipInX animate__delay-2s" src="img/nosotros2.png" alt="">
+          <img class="wow animate__animated animate__flipInX animate__delay-3s" src="img/nosotros3.png" alt="">
+          <img class="wow animate__animated animate__flipInX animate__delay-4s"src="img/nosotros4.png" alt="">
+        </article>
+    </section>
+  </section>
+
+  <!-- SECCION DE SUCURSALES -->
+  
+  <section class="sucursales">
+    <h2 class="ancho centrar">Nuestras sucursales</h2>
+    <section class="ancho sucursales_generales">
+        
+          <article class="wow animate__animated animate__backInLeft">
+            <img src="img/sucursal1.jpg" alt="">
+            <h2>Sucursal Yucatán</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus at recusandae autem ipsa vitae commodi culpa, ducimus</p>
+            <i id="icono1" class="fa-solid fa-circle-chevron-down"></i>
+
+            <!-- <aside id="info1">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus tenetur vero odit cupiditate debitis rerum neque asperiores officiis </p>
+               <i class="fa-brands fa-facebook-f"></i>
+               <i class="fa-brands fa-instagram"></i>
+               <i class="fa-brands fa-whatsapp"></i>
+               <i class="fa-brands fa-google-plus-g"></i>
+            </aside> -->
+          </article>
+
+          <article class="wow animate__animated animate__backInDown">
+            <img src="img/sucursal1.jpg" alt="">
+            <h2>Sucursal México</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus at recusandae autem ipsa vitae commodi culpa, ducimus</p>
+            <i id="icono2" class="fa-solid fa-circle-chevron-down"></i>
+
+            <!-- <aside id="info2">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus tenetur vero odit cupiditate debitis rerum neque asperiores officiis </p>
+               <i class="fa-brands fa-facebook-f"></i>
+               <i class="fa-brands fa-instagram"></i>
+               <i class="fa-brands fa-whatsapp"></i>
+               <i class="fa-brands fa-google-plus-g"></i>
+            </aside> -->
+          </article>
+
+          <article class="wow animate__animated animate__backInRight">
+            <img src="img/sucursal1.jpg" alt="">
+            <h2>Sucursal Monterrey</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus at recusandae autem ipsa vitae commodi culpa, ducimus</p>
+            <i id="icono3" class="fa-solid fa-circle-chevron-down"></i>
+<!-- 
+            <aside id="info3">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus tenetur vero odit cupiditate debitis rerum neque asperiores officiis </p>
+               <i class="fa-brands fa-facebook-f"></i>
+               <i class="fa-brands fa-instagram"></i>
+               <i class="fa-brands fa-whatsapp"></i>
+               <i class="fa-brands fa-google-plus-g"></i>
+            </aside> -->
+          </article>
+          
+       
+        
+    </section>
+  </section>
+    
+ <!-- FOOTER  -->
+ <footer>
+  <h2 class="ancho">Contactame Soy Daniel Ek</h2>
+  <section class="ancho footer">
+    <section class="section1">
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate
+        reiciendis eveniet rem ratione quaerat recusandae
+      </p>
+    </section>
+    <section class="section2">
+      <i class="fa-brands fa-facebook-f"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-whatsapp"></i>
+      <i class="fa-brands fa-google-plus-g"></i>
+    </section>
+    <section class="section1">
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate
+        reiciendis eveniet rem ratione quaerat recusandae
+      </p>
+    </section>
+  </section>
+</footer>
+
+  <!-- seccion de los script -->
+  <!-- <script>
+    $("#icono1").click(function () {
+      $("#info1").slideToggle();
+    });
+  </script>
+
+<script>
+  $("#icono2").click(function () {
+    $("#info2").slideToggle();
+  });
+</script>
+
+<script>
+  $("#icono3").click(function () {
+    $("#info3").slideToggle();
+  });
+</script> -->
+
+<script>
+  $("#icono").click(function () {
+    $("#caja").slideToggle();
+  });
+</script>
+
+  <script>
+    new WOW().init();
+  </script>
+
+  <script>
+    $(document).ready(function(){
+  $('.ir_arriba').click(function(){
+      $('body, html').animate({
+          scrollTop: '0px'
+      }, 1000);
+  });
+});
+  </script>
+
+  </body>
+</html>
